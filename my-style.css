@@ -13,23 +13,25 @@
     img {
       vertical-align:middle;
       align-content: right;
+      width:  250px;
+      height: 250px;
+      object-fit: cover;
+      padding: 5px;
     }
     
     h1{color: #0D7680;
     font-family: futura;
     font-size: 100%;
-    text-align: left;
+    text-align: center;
     }
 
-h2 {
+    h2{
         color: #FFF9F5;
         font-family: futura;
         font-size: 100%;
         text-align: centre
         }
-body {
-        background-color: #FFF9F5;
-      }
+
       * {
         box-sizing: border-box;
       }
@@ -38,7 +40,9 @@ body {
         font-family: futura;
         text-transform: uppercase;
         color: rgb(61, 59, 59);
+        background-color: #FFF9F5;
       }
+
       a:visited {
         color: #FC4C02;
         background-color: transparent;
@@ -54,15 +58,13 @@ body {
         color: white;
       }
       
-      section {
-        
-      }
       .inspo{
         display: -webkit-flex;
         display: flex;
         background-color:#FFF9F5 ;
         justify-content: space-around;
-        flex: wrap;
+        flex-flow: wrap row;
+
       }
       
       /* Style the navigation menu */
@@ -70,60 +72,49 @@ body {
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        background: #ccc;
-        padding: 20px;
+        padding-left: 20px;
         background-color:#FFF9F5
       }
+
+      
       
       /* Style the list inside the menu */
       nav ul {
+        padding: 10px;
+        padding-top: 50px;
         list-style-type:circle;
-        padding: 5px;
         font-family: futura;
         text-align: left;
-         
+        background-color: white;
+        vertical-align: center;
+        height: 160px;
+        width: 300px;
       }
       
-      /* Style the content */
-      article {
-        -webkit-flex: 3;
-        -ms-flex: 3;
-        flex: 3;
-        background-color: #f1f1f1;
-        padding: 10px;
-      }
-      
-     
-
-      /* Style the footer */
       .section2{
         min-width: fit-content;
         vertical-align: middle;
-        align-items: center;
+        
+        
       }
       .act-header{
         text-align: center;
       }
       .activity {
         display: flex;
-        flex-direction: row;
+        flex-flow: wrap row;
         justify-content: space-evenly;
         background-color: #FC4C02;
         padding: 5px;
         text-align: center;
         color: white;
         margin-top: auto;
+        align-items: center;
       }
-      
-      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-      @media (max-width: 600px) {
-        section {
-          -webkit-flex-direction: column;
-          flex-direction: column;
-        }
-      }
-      
       .today{
+        color: white;
+      }
+      #next-race{
         color: white;
       }
       #proj-2{
@@ -144,3 +135,13 @@ body {
         border-radius: 12px;
         padding: 15px 32px;        
       }
+      
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+      
+ 
