@@ -96,7 +96,18 @@ body {
      
 
       /* Style the footer */
-      footer {
+      .section2{
+        min-width: fit-content;
+        vertical-align: middle;
+        align-items: center;
+      }
+      .act-header{
+        text-align: center;
+      }
+      .activity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         background-color: #FC4C02;
         padding: 5px;
         text-align: center;

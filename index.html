@@ -39,26 +39,29 @@
          
         </div>
       
-    
-      <div class = "footer">
 
-        <footer>
-        <h2>ACTIVITY</h2>
-        <p><iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/16490148/activity-summary/b333a160683620b239f8b1a39252d3b1799600b9'></iframe></p>
+        <section class="activity">
+          <div id="strava" class="section2">
+         <h1 class="act-header">ACTIVITY</h1>
+         <p><iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/16490148/activity-summary/b333a160683620b239f8b1a39252d3b1799600b9'></iframe></p>
+          <p id='date-time'>  </p>
+        </div>
         
-        <p id='date-time'>  </p>
-        <script>
-          const d = new Date().toDateString();
-          document.getElementById('date-time').innerHTML= "Current Date: " + d;
-          </script>
+        <div id="list" class="section2">
          <nav>
           <ul>
-            <h1>RESOURCES</h1>
+            <h1 class="act-header">RESOURCES</h1>
             <li><a href="https://www.triathlete.com/training/20-week-training-plan-first-70-3-triathlon/">Training Plan</a></li>
             <li><a href="https://hampsteadtriathlonclub.co.uk/">Club Info</a></li>
             <li><a href="https://www.ironman.com/im703-victoria">Next Event</a></li>
           </ul>
         </nav>
+      </div>
+      </section>
+      <div class = "footer">
+
+        <footer>
+       
       </footer>
     </div>
     <div id="proj-2">
@@ -66,17 +69,7 @@
         <button onclick="myFunction()">Go to Project 2</button>
       </p>
 
-
-<script>
-function myFunction() {
-  var w = window.open();
-  w.document.open(<a href="comment.html">);
-  w.document.write("<h2>Hello World!</h2>");
-  w.document.close();
-}
-</script>
-
     </div>
-    
+    <script src="carousel.js"></script>
 </body>
 </html>
