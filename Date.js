@@ -1,6 +1,5 @@
-
-          const d = new Date().toDateString();
-          document.getElementById('date-time').innerHTML = "Current Date: " + d;
+const d = new Date().toDateString();
+document.getElementById('date-time').innerHTML = "Current Date: " + d;
           
 
 function myFunction(){
